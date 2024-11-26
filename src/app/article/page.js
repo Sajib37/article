@@ -23,7 +23,7 @@ const article = () => {
                 </h1>
             </div>
             <p className="flex items-center  mt-12 mx-2 gap-2 text-sm">
-                প্রচ্ছদ <FaAngleRight /> লাইফস্টাইল
+                প্রচ্ছদ <FaAngleRight /> ইতিহাস
             </p>
 
             {/* title is here */}
@@ -41,7 +41,7 @@ const article = () => {
                 />
                 <div className="text-sm">
                     <p>লাইফস্টাইল ডেস্ক</p>
-                    <p>০৩ জানুয়ারি ২০২২, ৩ঃ৪৫ পিএম</p>
+                    <p>০৯ জুন ২০২৩, ৩ঃ৪৫ পিএম</p>
                 </div>
             </div>
 

